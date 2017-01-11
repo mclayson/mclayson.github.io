@@ -1,0 +1,11 @@
+/* Maste Style Sheet */
+
+html {
+    background-color: #333333;
+}
+
+body {
+    max-width: 1200px;
+    min-width: 100%;
+    background-color: #f3f3f3;
+}
