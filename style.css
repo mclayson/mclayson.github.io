@@ -1,11 +1,28 @@
-/* Maste Style Sheet */
+/* Master Style Sheet */
 
-html {
+html, body {
     background-color: #333333;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-body {
-    max-width: 1200px;
-    min-width: 100%;
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 100px;
+    margin-left: .83em;
+}
+
+article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    padding: 0 20px;
     background-color: #f3f3f3;
 }
