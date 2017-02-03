@@ -1,11 +1,23 @@
 /* Master Style Sheet */
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     background-color: #333333;
     height: 100%;
     width: 100%;
+    font-size: 20px;
     margin: 0;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', Helvetica, sans-serif;
+    min-width: 300px;
+}
+
+@media(max-width: 500px) {
+    html, body {
+        font-size: 16px;
+    }
 }
 
 h1 {
@@ -16,13 +28,13 @@ h1 {
 }
 
 h2 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 50px;
+    font-family: 'Press Start 2P', Monaco, monospace;
+    font-size: 3em;
     margin-left: .83em;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 h4 {

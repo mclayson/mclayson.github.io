@@ -1,0 +1,125 @@
+nav {
+    width: 100%;
+    margin: 0;
+}
+nav ul {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+nav ul li {
+    width: 32%;
+    margin: 0;
+    text-align: center;
+    border-right: solid 2px #333333;
+    vertical-align: middle;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a {
+    width: 100%;
+    display: inline-block;
+}
+
+.selected {
+    background: #333333;
+    color: white;
+}
+
+
+.separator-line {
+    width: 0;
+    height: 40px;
+    border-right: solid 2px #333333;
+    vertical-align: middle;
+}
+
+main {
+    max-width: none;
+    position: fixed;
+    bottom: 0px;
+    top: 55px;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    text-align: center;
+    padding: 0;
+    background: #212121;
+}
+
+section.info-container {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+
+    background: #333333;
+    color: #f3f3f3;
+    border-radius: 1em 1em 0 0;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+figure {
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+}
+img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+}
+
+footer ul {
+    font-size: .7em;
+    padding: 5px;
+}
+footer ul li {
+    margin: 0 15px;
+}
+
+h1 {
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: .5em;
+}
+
+li span {
+    float: right;
+}
