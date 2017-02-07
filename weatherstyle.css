@@ -120,6 +120,48 @@ ul {
     margin: .5em;
 }
 
-li span {
+#data ul li span {
     float: right;
+}
+
+.hourly-data {
+    display: none;
+    background-color: #333333;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    height: 70px;
+}
+
+#hourly-list li {
+    display: inline-block;
+    border-right: solid white 1px;
+    height: 100%;
+    width: 3.7%;
+    min-width: 2.2em;
+    color: white;
+}
+
+#hourly-list li:last-child {
+    border-right: none;
+}
+
+.hourly-data ul {
+    margin: 0;
+    height: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    .hourly-data {
+        display: block;
+    }
+    section.info-container {
+        bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #hourly-list li div:first-child {
+        font-size: .5em;
+    }
 }
