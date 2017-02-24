@@ -107,7 +107,8 @@ figure {
 }
 
 img {
-    height: 500px;
+    max-height: 500px;
+    max-width: 100%;
     padding: 10px;
     border: #333333 solid;
     border-radius: 20px;
