@@ -17,26 +17,26 @@
     <header>
         <nav>
             <ul>
-                <li><a class="" href="./weatherapp-franklin.html">Franklin, ID</a></li>
-
+                <li><a class="selected" href="">Franklin, ID</a></li>
                 <li><a href="./weatherapp-greenville.html">Greenville, SC</a></li>
                 <li><a href="">Springfield, IL</a></li>
             </ul>
         </nav>
     </header>
     <main class="">
-        <h1 class="flex-item" id="cityDisplay">...</h1>
-        <h2 class="flex-item" id="summary">...</h2>
+        <h1 class="flex-item">Sunny</h1>
         <figure class="flex-item">
-            <img id="weather-img" alt="" src="">
+            <img id="weather-img" alt="Looks like it's going to be sunny today!" src="weatherimg/sunny.jpg">
         </figure>
         <section class='info-container flex-item'>
-            <h2 id="currentTemp">...</h2>
+            <h2>67&deg;F</h2>
             <div id="data">
                 <ul>
-                    <li>Relative Humidity:<span id="precipitation"></span></li>
-                    <li>Wind:<span id="wind"></span></li>
-                    <li>Feels Like:<span id="feels"></span></li>
+                    <li>High:<span id="high">90</span></li>
+                    <li>Low:<span id="low">66</span></li>
+                    <li>Precipitation:<span id="precipitation">0</span></li>
+                    <li>Wind:<span id="wind">1 - 5</span></li>
+                    <li>Direction:<span id="direction">Southwest</span></li>
                 </ul>
             </div>
         </section>
@@ -152,9 +152,5 @@
         </ul>
     </footer>
 </body>
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-<script src="./js/remote_wu.js"></script>
 
 </html>
