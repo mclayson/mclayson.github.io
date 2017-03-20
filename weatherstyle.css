@@ -11,7 +11,7 @@ nav ul {
     display: flex;
 }
 nav ul li {
-/*    width: 32%;*/
+    /*    width: 32%;*/
     margin: 0;
     text-align: center;
     border-right: solid 2px #333333;
@@ -25,20 +25,16 @@ nav ul li a {
     width: 100%;
     display: inline-block;
 }
-
 .selected {
     background: #333333;
     color: white;
 }
-
-
 .separator-line {
     width: 0;
     height: 40px;
     border-right: solid 2px #333333;
     vertical-align: middle;
 }
-
 main {
     max-width: none;
     position: fixed;
@@ -52,12 +48,10 @@ main {
     text-align: center;
     padding: 0;
     background: #212121;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 section.info-container {
     position: absolute;
     bottom: 50px;
@@ -67,18 +61,16 @@ section.info-container {
     margin: auto;
     text-align: left;
     padding: 20px;
-
     background: #333333;
     color: #f3f3f3;
     border-radius: 1em 1em 0 0;
     max-width: 500px;
     min-width: 300px;
 }
-
 figure {
     margin: 0;
-/*    position: absolute;*/
-/*    z-index: -1;*/
+    /*    position: absolute;*/
+    /*    z-index: -1;*/
     width: 100%;
     height: 100%;
     min-width: 300px;
@@ -93,13 +85,11 @@ img {
     max-width: 100%;
     max-height: 80%;
 }
-
 footer {
     position: fixed;
     bottom: 0;
     padding: 0;
 }
-
 footer ul {
     font-size: .7em;
     padding: 5px;
@@ -107,74 +97,61 @@ footer ul {
     justify-content: space-around;
 }
 footer ul li {
-/*    margin: 0 15px;*/
+    /*    margin: 0 15px;*/
     margin: 0;
 }
-
 h1 {
     width: 90%;
     max-width: 500px;
     padding: 10px;
     margin: 10px;
 }
-
 h2 {
     margin: 0;
     text-align: center;
+    color: #f3f3f3;
 }
-
-
 ul {
     list-style: none;
     padding: 0;
     margin: .5em;
 }
-
 #data ul li span {
     float: right;
 }
-
 .hourly-data {
-/*    display: none;*/
+    /*    display: none;*/
     background-color: #333333;
     width: 100%;
     position: absolute;
     bottom: 27px;
     height: 42px;
 }
-
 #hourly-list li {
     display: inline-block;
     border-right: solid white 1px;
     height: 100%;
-/*    width: 3.7%;*/
+    /*    width: 3.7%;*/
     min-width: 2.2em;
     color: white;
-
     flex: 1 0 auto;
 }
-
 #hourly-list li:last-child {
     border-right: none;
 }
-
 .hourly-data ul {
     margin: 0;
     height: 100%;
 }
-
 .flex-container {
     display: flex;
 }
-
-main.flex-container {
-}
+main.flex-container {}
 h1.flex-item {
     width: 100%;
     max-width: none;
     flex: 0 0 auto;
 }
-
 @media screen and (min-width: 900px) {
     .hourly-data {
         height: 70px;
@@ -183,7 +160,6 @@ h1.flex-item {
         bottom: 90px;
     }
 }
-
 @media screen and (max-width: 1400px) {
     #hourly-list li div:first-child {
         font-size: .8em;
