@@ -11,6 +11,12 @@
     <link rel="stylesheet" type="text/css" href="/weatherstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <!-- *********************************************
+    * Who Did You Collaborate With On This Assessment?
+    * 1. Matt Clayson
+    * 2. Makenna Gunter
+    * 3. Ashley Nielson
+    * ******************************************** -->
 </head>
 
 <body>
@@ -25,20 +31,32 @@
         </nav>
     </header>
     <main class="">
-        <h1 class="flex-item" id="cityDisplay">...</h1>
-        <h2 class="flex-item" id="summary">...</h2>
-        <figure class="flex-item">
-            <img id="weather-img" alt="The Current Weather" src="./img/man-in-suit.jpg">
-        </figure>
-        <section class='info-container flex-item'>
-            <h2 id="currentTemp">...</h2>
-            <div id="data">
-                <ul>
-                    <li>Relative Humidity:<span id="precipitation"></span></li>
-                    <li>Wind:<span id="wind"></span></li>
-                    <li>Feels Like:<span id="feels"></span></li>
-                </ul>
+        <form id="srchfrm">
+            <input type="search" name="query" id="query">
+            <!--            <input type="submit" name="submit" value="Search" id="send">-->
+        </form>
+        <section id="searchResults">
+            <h2>Search Results</h2>
+            <div id="searchResultsDisplay">
+
             </div>
+        </section>
+        <section id="weather-info">
+            <h1 class="flex-item" id="cityDisplay">...</h1>
+            <h2 class="flex-item" id="summary">...</h2>
+            <figure class="flex-item">
+                <img id="weather-img" alt="The Current Weather" src="./img/man-in-suit.jpg">
+            </figure>
+            <section class='info-container flex-item  no-hourly'>
+                <h2 id="currentTemp">...</h2>
+                <div id="data">
+                    <ul>
+                        <li>Relative Humidity:<span id="precipitation"></span></li>
+                        <li>Wind:<span id="wind"></span></li>
+                        <li>Feels Like:<span id="feels"></span></li>
+                    </ul>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
@@ -52,7 +70,7 @@
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script src="./js/remote_wu.js"></script>
+    <script src="./js/search.js"></script>
 </body>
 
 

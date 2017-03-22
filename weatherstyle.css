@@ -25,6 +25,12 @@ nav ul li a {
     width: 100%;
     display: inline-block;
 }
+a {
+    cursor: pointer;
+}
+#searchResults ul {
+    list-style: none;
+}
 .selected {
     background: #333333;
     color: white;
@@ -66,6 +72,9 @@ section.info-container {
     border-radius: 1em 1em 0 0;
     max-width: 500px;
     min-width: 300px;
+}
+.info-container.no-hourly {
+    bottom: 30px;
 }
 figure {
     margin: 0;
@@ -152,12 +161,20 @@ h1.flex-item {
     max-width: none;
     flex: 0 0 auto;
 }
+#searchResults {
+    display: block;
+    position: absolute;
+    top: 50px;
+}
 @media screen and (min-width: 900px) {
     .hourly-data {
         height: 70px;
     }
     section.info-container {
         bottom: 90px;
+    }
+    .info-container.no-hourly {
+        bottom: 30px;
     }
 }
 @media screen and (max-width: 1400px) {
