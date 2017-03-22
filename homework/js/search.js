@@ -28,6 +28,8 @@ $(function () {
                 //                add1-3
                 $("#currentTemp").text(data.current_observation.temp_f + String.fromCharCode(176) + "f");
                 $("#wind").text(data.current_observation.wind_string);
+                $("#wind").text(data.current_observation.wind_string);
+                $("#wind").text(data.current_observation.wind_string);
                 $("#feels").text(data.current_observation.feelslike_string);
                 $("#precipitation").text(data.current_observation.relative_humidity);
                 $("#weather-img").attr("src", data.current_observation.icon_url);
@@ -43,7 +45,7 @@ $(function () {
         searchResults.fadeIn();
         var value = $('#query').val();
         var rExp = new RegExp(value, "i");
-        $.getJSON("http://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
+        $.getJSON("//autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
             console.log(data); // test for JSON received
             // Begin building output
             var output = '<ul>';
