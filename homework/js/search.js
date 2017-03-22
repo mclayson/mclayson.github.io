@@ -7,7 +7,7 @@ $(function () {
     info.fadeOut();
 
     // Get the data from the wunderground API
-    window.getResults = function (lat, long) {
+    getResults = function (lat, long) {
         $.ajax({
 
             url: "//api.wunderground.com/api/96f231c8d2cbcc08/conditions/q/" + lat + "," + long + ".json",
@@ -52,12 +52,18 @@ $(function () {
             $.each(data.RESULTS, function (key, val) {
                 if (val.name.search(rExp) != -1) {
                     output += '<li>';
-                    output += '<a onClick=getResults(' + val.lat + ',' + val.lon + ') title="See results for ' + val.name + '">' + val.name + '</a>';
+                    output += '<a data-lat="' + val.lat + '" data-lon="' + val.lon + '" title="See results for ' + val.name + '">' + val.name + '</a>';
                     output += '</li>';
                 }
             }); // end each
             output += '</ul>';
             dataList.html(output); // send results to the page
+
+            $('#searchResultsDisplay').on('click', 'li', function (e) {
+                getResults(e.target.getAttribute('data-lat'), e.target.getAttribute('data-lon'));
+            });
+
+
         }); // end getJSON
     }); // end keyup
 });
