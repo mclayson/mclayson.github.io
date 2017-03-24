@@ -10,6 +10,21 @@ $(function () {
     getResults = function (lat, long) {
         $.ajax({
 
+            url: "//api.wunderground.com/api/96f231c8d2cbcc08/forecast/q/" + lat + "," + long + ".json",
+            //        url: "../js/weather.json",
+            dataType: "jsonp",
+            success: function (data) {
+                console.log(data);
+
+                info.fadeIn();
+                searchResults.fadeOut();
+                $("#high").text(data.forecast.simpleforecast.forecastday[0].high.fahrenheit + String.fromCharCode(176) + "f");
+                $("#low").text(data.forecast.simpleforecast.forecastday[0].low.fahrenheit + String.fromCharCode(176) + "f");
+
+            }
+        });
+        $.ajax({
+
             url: "//api.wunderground.com/api/96f231c8d2cbcc08/conditions/q/" + lat + "," + long + ".json",
             //        url: "../js/weather.json",
             dataType: "jsonp",

@@ -43,7 +43,7 @@
 
             </div>
         </section>
-        <section id="weather-info">
+        <section style="display: none;" id="weather-info">
             <h1 class="flex-item" id="cityDisplay">...</h1>
             <h2 class="flex-item" id="summary">...</h2>
             <figure class="flex-item">
@@ -53,6 +53,8 @@
                 <h2 id="currentTemp">...</h2>
                 <div id="data">
                     <ul>
+                        <li>High Temp:<span id="high"></span></li>
+                        <li>Low Temp:<span id="low"></span></li>
                         <li>Relative Humidity:<span id="precipitation"></span></li>
                         <li>Wind:<span id="wind"></span></li>
                         <li>Feels Like:<span id="feels"></span></li>
