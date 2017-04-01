@@ -1,0 +1,16 @@
+{
+    "contacts": [
+        {
+            "displayName": "Phone Number",
+            "description": "(555) 555-585-5555-SENOR-MORTGAGE-TODAY"
+        },
+        {
+            "displayName": "Email",
+            "description": "YoureAwesome@gamefuel.com"
+        },
+        {
+            "displayName": "Address",
+            "description": "42 S 42 W Rexburg, ID"
+        }
+    ]
+}
