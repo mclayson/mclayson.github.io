@@ -159,14 +159,19 @@ figure {
     text-align: center;
 }
 img {
-    max-height: 500px;
     max-width: 100%;
-    padding: 10px;
+    padding: 0;
+    margin-top: 1em;
     border: #333333 solid;
     border-radius: 20px;
 }
 .home-image {
     text-align: center;
+}
+.featured-video {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 .out-of-view {
     position: fixed;
@@ -187,6 +192,9 @@ img {
         display: block;
         margin: .5em 0;
         text-align: center;
+    }
+    h2 {
+        font-size: 2em;
     }
 
     nav {
