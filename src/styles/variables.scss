@@ -1,0 +1,31 @@
+//Colors
+
+$c-white: white;
+$c-lt-grey: #e4e4e4;
+$c-grey: #c1c1c1;
+$c-dk-grey: #848484;
+$c-black: #3a3a3a;
+$c-orange: #ff9136;//#ff7e02;
+$c-blue: #007bff;
+$c-yellow: #D1A717;
+
+$c-footer: $c-white;
+$c-header: $c-white;
+$c-main: $c-white;
+$c-placeholder: #757575;
+
+$c-active: $c-orange;
+$c-card-shadow: #00000020;
+$c-shadow: #000000cc;
+
+$c-unassigned: #ffffffb5;
+$c-assigned: #00000085;
+$c-complete: #00000033;
+
+$s-input-width: 12rem;
+$border-radius: 10px;
+
+
+$e-in: cubic-bezier(0.9, 0, 1, 1);
+$e-out: cubic-bezier(0, 0, 0.1, 1);
+$e-in-out: cubic-bezier(0.6, 0, 0.3, 1);

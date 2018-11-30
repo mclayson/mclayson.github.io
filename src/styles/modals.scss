@@ -1,0 +1,61 @@
+@import "./variables.scss";
+
+#modal-container {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  transition: background-color .25s $e-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &>section {
+    transform: translateY(1rem);
+    opacity: 0;
+    transition: opacity .25s $e-in, transform .25s $e-in;
+    background-color: $c-white;
+    margin: 1rem 1rem 5rem;
+    padding: 1rem;
+    border-radius: $border-radius;
+  }
+  &.show {
+    transition: background-color .75s $e-out;
+    background-color: $c-shadow;
+    &>section {
+      transform: none;
+      opacity: 1;
+      transition: opacity .75s $e-out, transform .75s $e-out;
+    }
+  }
+}
+
+#modal-warning {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      margin: 0;
+      i {
+        margin-right: .5rem;
+      }
+    }
+  }
+  .message {
+    margin: 2rem 0;
+    p {
+      margin-bottom: .5rem;
+    }
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      margin-left: 1rem;
+    }
+  }
+}
